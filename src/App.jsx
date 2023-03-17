@@ -78,7 +78,7 @@ function App() {
       <MyNavBar />
       <HashRouter>
         <Routes>
-            <Route path="/my_website/" element={<Home />} />
+            <Route path="/my_website/#/" element={<Home />} />
             <Route path="/my_website/projects" element={<MyProjects/>} />
             <Route path="/my_website/resume" element={
                 <embed
