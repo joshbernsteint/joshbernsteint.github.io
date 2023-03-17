@@ -82,7 +82,7 @@ function App() {
             <Route path="/my_website/projects" element={<MyProjects/>} />
             <Route path="/my_website/resume" element={
                 <embed
-                src="/joshuabernsteinresume-2.pdf"
+                src="./joshuabernsteinresume-2.pdf"
                 type="application/pdf"
                 width="100%"
                 height="100%"

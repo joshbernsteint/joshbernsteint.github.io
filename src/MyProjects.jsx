@@ -7,7 +7,7 @@ export function MyProjects () {
     return (
         <Stack gap={2}>
             <Card className="bg-dark text-white">
-                <Card.Img src="/code.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
+                <Card.Img src="./code.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
                 <Card.ImgOverlay>
                     <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
                     <h1>This Website!</h1>
@@ -28,12 +28,12 @@ export function MyProjects () {
                             </ul>
                         </li>
                     </ul>
-                    <Button href='https://github.com/joshbernsteint/Website' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="/gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                    <Button href='https://github.com/joshbernsteint/Website' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
                     </Card.Text>
                 </Card.ImgOverlay>
                 </Card>
             <Card className="bg-dark text-white">
-                <Card.Img src="/Ethel5.png" alt="Card image" height={"600px"} style={{opacity: "15%"}}/>
+                <Card.Img src="./Ethel5.png" alt="Card image" height={"600px"} style={{opacity: "15%"}}/>
                 <Card.ImgOverlay>
                     <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
                     <h1>ETHEL: Simulating a custom CPU and Assembly Language</h1>
@@ -58,13 +58,13 @@ export function MyProjects () {
                             </ul>
                         </li>
                     </ul>
-                    <Button href='https://github.com/joshbernsteint/My-Projects/tree/main/ETHEL%20Assembler' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="/gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                    <Button href='https://github.com/joshbernsteint/My-Projects/tree/main/ETHEL%20Assembler' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
                     </Card.Text>
                 </Card.ImgOverlay>
                 </Card>
 
                 <Card className="bg-dark text-white">
-                <Card.Img src="/farm.jpg" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
+                <Card.Img src="./farm.jpg" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
                 <Card.ImgOverlay>
                     <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
                     <h1>Creating a Plant Pathogen Forecasting System</h1>
@@ -86,7 +86,7 @@ export function MyProjects () {
                             </ul>
                         </li>
                     </ul>
-                    <Button href='https://github.com/joshbernsteint/My-Projects/tree/main/Plant%20Disease%20Forcasting%20System' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="/gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                    <Button href='https://github.com/joshbernsteint/My-Projects/tree/main/Plant%20Disease%20Forcasting%20System' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
                     </Card.Text>
                 </Card.ImgOverlay>
                 </Card>

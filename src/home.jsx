@@ -37,8 +37,8 @@ export function Home(){
                     NJ to help raise guide dogs for the blind. <br/><br/>
 
                     <Stack direction='horizontal' gap={2}>
-                        <Button href='https://www.linkedin.com/in/joshua-bernstein-9700261b0/' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Connect with me on   <img src="/linkedIn.png" style={{width: "70px", top: "0"}}/> </Button>
-                        <Button href='https://github.com/joshbernsteint' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Check out my activity on <img src="/gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                        <Button href='https://www.linkedin.com/in/joshua-bernstein-9700261b0/' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Connect with me on   <img src="./linkedIn.png" style={{width: "70px", top: "0"}}/> </Button>
+                        <Button href='https://github.com/joshbernsteint' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Check out my activity on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
 
                     </Stack>
                     <hr/>
