@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./home"
 import { MyProjects } from './MyProjects'
 import { Stack, Nav, Navbar, Container, Col } from "react-bootstrap";
@@ -76,7 +76,7 @@ function App() {
     <Stack gap={2} className={`${styles.base}`}>
       <h1>-----</h1>
       <MyNavBar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
             <Route path="/my_website/" element={<Home />} />
             <Route path="/my_website/projects" element={<MyProjects/>} />
@@ -89,7 +89,7 @@ function App() {
                 />}/>
             <Route path="*" element={<Navigate to ="/" />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer style={{height: "100px"}}/>
     </Stack >
   )
