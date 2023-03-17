@@ -24,7 +24,7 @@ export function Home(){
         <Col className={`${styles.homeText}`}>
             <Card style={{ width: '38rem', borderRadius: "5%"}} className={`${styles.textChildren}`}>
             <Card.Header style={{fontSize: "xx-large" }}>About Me</Card.Header>
-            <Card.Img variant="top" src="/me.jpg"/>
+            <Card.Img variant="top" src="./me.jpg"/>
             <Card.Body>
                 <Card.Text>
                     <h3>Hello!</h3> 
