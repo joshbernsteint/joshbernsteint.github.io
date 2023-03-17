@@ -1,0 +1,21 @@
+
+
+.nav{
+    background-color: black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    max-height: 50px;
+}
+
+.navLink{
+    color: white;
+    transition: translate ease-in-out 100ms;
+    height: 35px;
+}
+
+.navLink:hover,.navLink:focus{
+    border-bottom: 1px solid #0048ff;
+    color: rgb(255, 255, 255);
+    translate: 0 -3px;
+}
+

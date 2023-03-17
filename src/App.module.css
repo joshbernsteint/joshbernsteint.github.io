@@ -1,0 +1,40 @@
+
+.base {
+    height:auto;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    border: 0;
+}
+
+.homeText {
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border-radius: 5%;
+    opacity: 80%;
+    z-index: 20;
+    margin-right: 0%;
+    margin-left: auto;
+    margin-top: 2%;
+    width: 40rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.textChildren {
+    background-color: rgb(39, 39, 39);
+    opacity: 75%;
+    border-color: rgb(39, 39, 39);
+    margin-left: 1rem;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.textLink{
+    text-decoration: none;
+}
