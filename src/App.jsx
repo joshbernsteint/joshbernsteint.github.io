@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./home"
 import { MyProjects } from './MyProjects'
 import { Stack, Nav, Navbar, Container, Col } from "react-bootstrap";
@@ -12,13 +12,13 @@ function MyNavBar() {
   <>
     <Navbar bg="black" variant="dark" fixed = "top" expand = "lg" className={`my-0`}>
       <Container fluid>
-        <Navbar.Brand href="/">Joshua Bernstein</Navbar.Brand>
+        <Navbar.Brand href="/#">Joshua Bernstein</Navbar.Brand>
         <Navbar.Toggle aria-controls = "navbarScroll"/>
         <Navbar.Collapse id = "navbarScroll" style = {{alignItems: "right",justifyContent:"right"}}>
         <Nav className={`my-1 my-lg-2 ${navStyles.nav}`}  navbarScroll>
-            <Nav.Link href="/" className={`${navStyles.navLink}`}>Home</Nav.Link>
-            <Nav.Link href="/projects" className={`${navStyles.navLink}`}>Projects</Nav.Link>
-            <Nav.Link href="/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link> 
+            <Nav.Link href="/#" className={`${navStyles.navLink}`}>Home</Nav.Link>
+            <Nav.Link href="/#/projects" className={`${navStyles.navLink}`}>Projects</Nav.Link>
+            <Nav.Link href="/#/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link> 
             <Nav.Link href="https://www.linkedin.com/in/joshua-bernstein-9700261b0/" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">LinkedIn</Nav.Link>
             <Nav.Link href="https://github.com/joshbernsteint" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">GitHub</Nav.Link>
           
@@ -76,11 +76,11 @@ function App() {
     <Stack gap={2} className={`${styles.base}`}>
       <h1>-----</h1>
       <MyNavBar />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<MyProjects/>} />
-            <Route path="/resume" element={
+            <Route path="/#" element={<Home />} />
+            <Route path="/#/projects" element={<MyProjects/>} />
+            <Route path="/#/resume" element={
                 <embed
                 src="./joshuabernsteinresume-2.pdf"
                 type="application/pdf"
@@ -89,7 +89,7 @@ function App() {
                 />}/>
             <Route path="*" element={<Navigate to ="/" />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer style={{height: "100px"}}/>
     </Stack >
   )
