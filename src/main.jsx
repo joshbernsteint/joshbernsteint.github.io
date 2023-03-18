@@ -7,12 +7,17 @@ import {
   Router,
   RouterProvider
 } from 'react-router-dom';
+import { MyProjects } from './MyProjects';
 
 
 const router = createHashRouter([
   {
     path: "/*",
     element: <Home />,
+  },
+  {
+    path: "/projects",
+    element: <MyProjects/>,
   }
 ]);
 
