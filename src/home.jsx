@@ -36,11 +36,54 @@ export function Home(){
                     volunteering in my spare time with <a href='https://www.seeingeye.org/' target={"_blank"} className={`${styles.textLink}`} rel="noreferrer noopener">The Seeing Eye</a> in Morristown, 
                     NJ to help raise guide dogs for the blind. <br/><br/>
 
+                    Currently, I am looking for a software developer or engineer internship for Summer 2023. <br/><br/>
+
                     <Stack direction='horizontal' gap={2}>
                         <Button href='https://www.linkedin.com/in/joshua-bernstein-9700261b0/' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Connect with me on   <img src="./linkedIn.png" style={{width: "70px", top: "0"}}/> </Button>
                         <Button href='https://github.com/joshbernsteint' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Check out my activity on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
 
                     </Stack>
+                    <hr/>
+                    <h3>Skills</h3>
+                    <h5><b>Programming Languages</b></h5>
+                    <Stack direction="horizontal" gap={5}>
+                        <Col>
+                            <b>Highly Skilled: </b>
+                            <ul>
+                                <li>C/C++</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>ARM Assembly</li>
+                            </ul>
+                        </Col>
+                        
+                        <Col>
+                            <b>Proficient: </b>
+                            <ul>
+                                <li>Javascript, CSS</li>
+                                <li>OCaml</li>
+                                <li>Linux</li>
+                                <li>Racket</li>
+                            </ul>
+
+                        </Col>
+                    </Stack>
+                    <h5><b>Cloud-based Virtual Machines</b></h5>
+                    <ul>
+                        <li>Experienced with Oracle Cloud-based VMs.</li>
+                        <li>Adept at machine manipulation, including but not limited to server hosting, transferring data between machines, and configuring network protocols.</li>
+                    </ul>
+
+
+                    <h5><b>Game Engine Software</b></h5>
+                    <ul>
+                        <li>Skilled in video game engine software Unreal Engine 4/5.</li>
+                        <li>Also experienced with other engines like Unity, and custom engines.</li>
+                    </ul>
+
+
+
+
                     <hr/>
                     <h3>Work Experience</h3>
                     {/* Research Assistant HTML */}

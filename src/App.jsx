@@ -8,7 +8,7 @@ export function MyNavBar() {
   <>
     <Navbar bg="black" variant="dark" fixed = "top" expand = "lg" className={`my-0`}>
       <Container fluid>
-        <Navbar.Brand href="/#/">Joshua Bernstein</Navbar.Brand>
+        <Navbar.Brand href="/#/" style={{fontSize: "x-large"}}>Joshua Bernstein</Navbar.Brand>
         <Navbar.Toggle aria-controls = "navbarScroll"/>
         <Navbar.Collapse id = "navbarScroll" style = {{alignItems: "right",justifyContent:"right"}}>
         <Nav className={`my-1 my-lg-2 ${navStyles.nav}`}  navbarScroll>
