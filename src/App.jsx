@@ -16,7 +16,7 @@ function MyNavBar() {
         <Navbar.Toggle aria-controls = "navbarScroll"/>
         <Navbar.Collapse id = "navbarScroll" style = {{alignItems: "right",justifyContent:"right"}}>
         <Nav className={`my-1 my-lg-2 ${navStyles.nav}`}  navbarScroll>
-            <Nav.Link href="/my_website/" className={`${navStyles.navLink}`}>Home</Nav.Link>
+            <Nav.Link href="/" className={`${navStyles.navLink}`}>Home</Nav.Link>
             <Nav.Link href="/my_website/projects" className={`${navStyles.navLink}`}>Projects</Nav.Link>
             <Nav.Link href="/my_website/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link> 
             <Nav.Link href="https://www.linkedin.com/in/joshua-bernstein-9700261b0/" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">LinkedIn</Nav.Link>
@@ -78,7 +78,7 @@ function App() {
       <MyNavBar />
       <BrowserRouter>
         <Routes>
-            <Route path="/my_website/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/my_website/projects" element={<MyProjects/>} />
             <Route path="/my_website/resume" element={
                 <embed
