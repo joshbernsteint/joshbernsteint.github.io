@@ -11,6 +11,7 @@
     color: white;
     transition: translate ease-in-out 100ms;
     height: 35px;
+    border-bottom: 0px;
 }
 
 .navLink:hover,.navLink:focus{
