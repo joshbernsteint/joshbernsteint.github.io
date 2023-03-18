@@ -17,8 +17,8 @@ function MyNavBar() {
         <Navbar.Collapse id = "navbarScroll" style = {{alignItems: "right",justifyContent:"right"}}>
         <Nav className={`my-1 my-lg-2 ${navStyles.nav}`}  navbarScroll>
             <Nav.Link href="/" className={`${navStyles.navLink}`}>Home</Nav.Link>
-            <Nav.Link href="/my_website/projects" className={`${navStyles.navLink}`}>Projects</Nav.Link>
-            <Nav.Link href="/my_website/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link> 
+            <Nav.Link href="/projects" className={`${navStyles.navLink}`}>Projects</Nav.Link>
+            <Nav.Link href="/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link> 
             <Nav.Link href="https://www.linkedin.com/in/joshua-bernstein-9700261b0/" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">LinkedIn</Nav.Link>
             <Nav.Link href="https://github.com/joshbernsteint" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">GitHub</Nav.Link>
           
@@ -79,8 +79,8 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/my_website/projects" element={<MyProjects/>} />
-            <Route path="/my_website/resume" element={
+            <Route path="/projects" element={<MyProjects/>} />
+            <Route path="/resume" element={
                 <embed
                 src="./joshuabernsteinresume-2.pdf"
                 type="application/pdf"
