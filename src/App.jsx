@@ -6,10 +6,7 @@ import { MyProjects } from './MyProjects'
 import { Stack, Nav, Navbar, Container, Col } from "react-bootstrap";
 import styles from './App.module.css';
 import navStyles from "./MyNavBar.module.css"
-import {
-  createHashRouter,
-  RouterProvider
-} from 'react-router-dom';
+
 
 function MyNavBar() {
   return (
@@ -75,16 +72,7 @@ function Footer () {
 
 function App() {
   const [count, setCount] = useState(0)
-  const router = createHashRouter([
-    {
-      path: "/",
-      element: <Hoem />,
-    },
-    {
-      path: "/projects",
-      element: <MyProjects />,
-    }
-  ]);
+
 
   return (
     <Stack gap={2} className={`${styles.base}`}>
@@ -104,7 +92,6 @@ function App() {
             <Route path="*" element={<Navigate to ="/#" />} />
         </Routes>
       </HashRouter> */}
-      <RouterProvider router={router}/>
       <Footer style={{height: "100px"}}/>
     </Stack >
   )
