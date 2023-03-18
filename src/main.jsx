@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
 import { MyNavBar, Footer } from './App'
 import { Home } from './home'
 import {
   createHashRouter,
-  Router,
   RouterProvider
 } from 'react-router-dom';
 import { MyProjects } from './MyProjects';

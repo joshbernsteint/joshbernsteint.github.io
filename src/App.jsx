@@ -1,10 +1,5 @@
-import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Home } from "./home"
-import { MyProjects } from './MyProjects'
 import { Stack, Nav, Navbar, Container, Col } from "react-bootstrap";
-import styles from './App.module.css';
 import navStyles from "./MyNavBar.module.css"
 
 
@@ -69,32 +64,3 @@ export function Footer () {
     </Stack>
   )
 }
-
-function App() {
-  const [count, setCount] = useState(0)
-
-
-  return (
-    <Stack gap={2} className={`${styles.base}`}>
-      <h1>-----</h1>
-      <MyNavBar />
-      {/* <HashRouter>
-        <Routes>
-            <Route path="/#" element={<Home />} />
-            <Route path="/#projects" element={<MyProjects/>} />
-            <Route path="/#resume" element={
-                <embed
-                src="./joshuabernsteinresume-2.pdf"
-                type="application/pdf"
-                width="100%"
-                height="100%"
-                />}/>
-            <Route path="*" element={<Navigate to ="/#" />} />
-        </Routes>
-      </HashRouter> */}
-      <Footer style={{height: "100px"}}/>
-    </Stack >
-  )
-}
-
-export default App
