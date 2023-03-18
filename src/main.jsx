@@ -37,9 +37,10 @@ const router = createHashRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Stack gap={2} className={`${styles.base}`}>
+      <h1>-</h1>
       <MyNavBar/>
       <RouterProvider router={router}/>
-      <Footer/>
+      <Footer style={{height: "100px"}}/>
     </Stack>
   </React.StrictMode>,
 )
