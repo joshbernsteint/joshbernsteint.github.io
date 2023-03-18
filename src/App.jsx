@@ -8,7 +8,7 @@ import styles from './App.module.css';
 import navStyles from "./MyNavBar.module.css"
 
 
-function MyNavBar() {
+export function MyNavBar() {
   return (
   <>
     <Navbar bg="black" variant="dark" fixed = "top" expand = "lg" className={`my-0`}>
@@ -31,7 +31,7 @@ function MyNavBar() {
   )
 }
 
-function Footer () {
+export function Footer () {
   return (
     <Stack direction="horizontal" style={{
       backgroundColor: "rgb(39,39,39)",border: "0px", color: "white", opacity: "75%"}}>
