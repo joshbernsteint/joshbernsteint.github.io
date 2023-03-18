@@ -28,7 +28,7 @@ export function MyProjects () {
                             </ul>
                         </li>
                     </ul>
-                    <Button href='https://github.com/joshbernsteint/Website' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                    <Button href='https://github.com/joshbernsteint/joshbernsteint.github.io' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
                     </Card.Text>
                 </Card.ImgOverlay>
                 </Card>
