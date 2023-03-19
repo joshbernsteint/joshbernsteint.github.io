@@ -49,7 +49,7 @@ export function Footer () {
             </ul>
           </li>
 
-          <li>Farm Image taken from <a target = "_blank" rel="noreferrer noopener" href="https://www.ewg.org/news-insights/news/2023/02/nearly-20000-farmers-received-farm-subsidies-37-consecutive-years">EWG</a></li>
+          <li>Three.js used for 3D models</li>
         </ul>
       </Col>
 

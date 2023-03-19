@@ -64,7 +64,7 @@ export function MyProjects () {
                 </Card>
 
                 <Card className="bg-dark text-white">
-                <Card.Img src="./farm.jpg" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
+                <Card.Img src="./risk.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
                 <Card.ImgOverlay>
                     <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
                     <h1>Creating a Plant Pathogen Forecasting System</h1>
