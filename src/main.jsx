@@ -24,7 +24,7 @@ const router = createHashRouter([
   {
     path: "/resume",
     element: <embed
-      src="./joshbernsteinResume.pdf"
+      src="./joshuabernsteinresume.pdf"
       type="application/pdf"
       width="100%"
       height="100%"
