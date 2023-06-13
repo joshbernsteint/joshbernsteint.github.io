@@ -14,7 +14,7 @@ export function MyNavBar() {
         <Nav className={`my-1 my-lg-2 ${navStyles.nav}`}  navbarScroll>
             <Nav.Link href="/#/" className={`${navStyles.navLink}`}>Home</Nav.Link>
             <Nav.Link href="/#/projects" className={`${navStyles.navLink}`}>Projects</Nav.Link>
-            <Nav.Link href="/#/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link> 
+            <Nav.Link href="/#/resume" className={`${navStyles.navLink}`}>Resumé</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/joshua-bernstein-9700261b0/" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">LinkedIn</Nav.Link>
             <Nav.Link href="https://github.com/joshbernsteint" className={`${navStyles.navLink}`} target="_blank" rel="noreferrer noopener">GitHub</Nav.Link>
           
