@@ -32,6 +32,34 @@ export function MyProjects () {
                     </Card.Text>
                 </Card.ImgOverlay>
                 </Card>
+
+                <Card className="bg-dark text-white">
+                <Card.Img src="./team11.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
+                <Card.ImgOverlay>
+                    <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
+                    <h1>Scrumptious Solar Services</h1>
+                    <ul>
+                        <li><b style={{fontSize: "larger"}}>When: </b>Spring 2023</li>
+                        <li><b style={{fontSize: "larger"}}>Languages/Technologies Used: </b>Javascript(React), Firebase, Stripe, Express</li>
+                        <li><b style={{fontSize: "larger"}}>Summary: </b>
+                            <ul>
+                                <li>Made in collaboration with Joshua Gorman, Antonio Cardona, Sohan Chatterjee, Jasmine Perez, and Campbell Tedtsen</li>
+                                <li>Online portal that allows for the management of solar panel-related projects</li>
+                            </ul>
+                        </li>
+                        <li><b style={{fontSize: "larger"}}>Features:</b>
+                            <ul>
+                                <li>Multiple different account types</li>
+                                <ul><li>Manager, Sales Representative, Construction Worker, End Customer</li></ul>
+                                <li>Creation and deletion of tasks by managers</li>
+                                <li>Responsive database to reliably and securely hold account and task data</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <Button href='https://github.com/joshbernsteint/team11-scrumptious_7' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                    </Card.Text>
+                </Card.ImgOverlay>
+                </Card>
             <Card className="bg-dark text-white">
                 <Card.Img src="./Ethel5.png" alt="Card image" height={"600px"} style={{opacity: "15%"}}/>
                 <Card.ImgOverlay>
