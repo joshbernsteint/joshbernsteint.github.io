@@ -28,15 +28,15 @@ export function Home(){
             <Card.Body>
                 <Card.Text>
                     <h3>Hello!</h3> 
-                    I'm Josh, currently a 20-year-old Junior Computer Science major at 
+                    I'm Josh, currently a 20-year-old 3rd year Computer Science major at 
                     Stevens Institute of Technology in Hoboken, NJ. <br/> <br/>
                     
                     I describe myself as a nerd, being a huge fan of franchises like <i>Lord of the Rings</i> and <i>Star Wars</i>. I am a big fan of video games, my current favorite being <i>Destiny 2</i> and <i>Rainbow Six: Siege</i>.  
-                    I also love animals (especially my dog and cat!),
+                    I also love animals (especially my dog and cat!), and I
                     volunteering in my spare time with <a href='https://www.seeingeye.org/' target={"_blank"} className={`${styles.textLink}`} rel="noreferrer noopener">The Seeing Eye</a> in Morristown, 
                     NJ to help raise guide dogs for the blind. <br/><br/>
 
-                    Currently, I am looking for a software developer or engineer internship for Summer 2023. <br/><br/>
+                    Currently, I am looking for a software developer or engineer internship for Summer 2024. <br/><br/>
 
                     <Stack direction='horizontal' gap={2}>
                         <Button href='https://www.linkedin.com/in/joshua-bernstein-9700261b0/' target={"_blank"} variant='secondary' style={{width: "50%",height: "45px", padding: "10px"}}>Connect with me on   <img src="./linkedIn.png" style={{width: "70px", top: "0"}}/> </Button>
@@ -62,7 +62,7 @@ export function Home(){
                             <ul>
                                 <li>Javascript, CSS</li>
                                 <li>OCaml</li>
-                                <li>Linux</li>
+                                <li>Linux shell</li>
                                 <li>Racket</li>
                             </ul>
 
@@ -71,17 +71,39 @@ export function Home(){
                     <h5><b>Cloud-based Virtual Machines</b></h5>
                     <ul>
                         <li>Experienced with Oracle Cloud-based VMs.</li>
-                        <li>Adept at machine manipulation, including but not limited to server hosting, transferring data between machines, and configuring network protocols.</li>
+                        <li>Adept at machine manipulation, including but not limited to server hosting, transferring data between machines (via SSH Protocol), and configuring network protocols to optimize server capabilities.</li>
                     </ul>
 
-
-                    <h5><b>Game Engine Software</b></h5>
+                    <h5><b>GIS Software</b></h5>
                     <ul>
-                        <li>Skilled in video game engine software Unreal Engine 4/5.</li>
-                        <li>Also experienced with other engines like Unity, and custom engines.</li>
+                        <li>Versed in manipulating and illistruating data with GIS softwares, including ArcMap and ArcGIS pro</li>
+                        <li>Skilled in designing python scripts to automate the creation of GIS maps and features</li>
+                    </ul>                   
+
+                    {/* Education Experience */}
+                    <hr/>
+                    <h3>Education</h3>
+                    <b style={{fontSize: "15pt"}}>Stevens Institute of Technology</b><br/>
+                    <em>September 2021 - Present</em>
+                    <ul>
+                        <li>Expected Graduation Spring 2024</li>
+                        <li>3.9 GPA</li>
+                        <li><b>Relevant Coursework</b>
+                            <ul>
+                                <li>Data Structures - A</li>
+                                <li>Algorithms - A</li>
+                                <li>Computer Organization & Systems - A</li>
+                                <li>Systems Programming - A</li>
+                            </ul>
+                        </li>
                     </ul>
 
-
+                    <b style={{fontSize: "15pt"}}>Mahwah High School</b><br/>
+                    <em>September 2017 - June 2021</em>
+                    <ul>
+                        <li>Weighted 4.0 GPA</li>
+                        <li>Member of Marching and Symphonic Band</li>
+                    </ul>
 
 
                     <hr/>
@@ -133,29 +155,7 @@ export function Home(){
                             </ul>
                         </ul> 
                     </>
-                    {/* Education Experience */}
-                    <hr/>
-                    <h3>Education</h3>
-                    <b style={{fontSize: "15pt"}}>Stevens Institute of Technology</b><br/>
-                    <em>September 2021 - Present</em>
-                    <ul>
-                        <li>Expected Graduation Spring 2024</li>
-                        <li>4.0 GPA</li>
-                        <li><b>Relevant Coursework</b>
-                            <ul>
-                                <li>Data Structures - A</li>
-                                <li>Algorithms - A</li>
-                                <li>Computer Organization & Systems - A</li>
-                            </ul>
-                        </li>
-                    </ul>
 
-                    <b style={{fontSize: "15pt"}}>Mahwah High School</b><br/>
-                    <em>September 2017 - June 2021</em>
-                    <ul>
-                        <li>Weighted 4.0 GPA</li>
-                        <li>Member of Marching and Symphonic Band</li>
-                    </ul>
 
 
                 {/* Awards */}

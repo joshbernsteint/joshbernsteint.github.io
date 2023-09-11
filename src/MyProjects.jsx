@@ -1,123 +1,112 @@
 import { Button, Col,Stack, Card } from "react-bootstrap";
 import styles from './App.module.css';
 
+/**
+ * Creates a Project Card
+ * @param {str} image Path to the image file for the background
+ * @param {str} title Name of the project
+ * @param {str} when Date specifiying when the project was completed 
+ * @param {str} languages String specifying what programming languages and technologies were used
+ * @param {Array[str]} summary A list of strings containing a summary of the project
+ * @param {str} features A list of strings containing the features of the project
+ * @param {str} github_link A url containing the link to the github repo
+ * @returns A Project component
+ */
+function Project(props){
+    return (
+        <Card className="bg-dark text-white">
+            <Card.Img src={props.image} alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
+            <Card.ImgOverlay>
+                    <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
+                    <h1>{props.title}</h1>
+                    <ul>
+                        <li><b style={{fontSize: "larger"}}>When: </b>{props.when}</li>
+                        <li><b style={{fontSize: "larger"}}>Languages & Technologies Used: </b>{props.languages}</li>
+                        <li><b style={{fontSize: "larger"}}>Summary: </b>
+                            <ul>
+                                {
+                                    props.summary.map((el,i) => (
+                                        <li key={i}>{el}</li>
+                                    ))
+                                }
+                            </ul>
+                        </li>
+                        <li><b style={{fontSize: "larger"}}>Features:</b>
+                            <ul>
+                                {
+                                    props.features.map((el,i) => (
+                                        <li key={i}>{el}</li>
+                                    ))
+                                }
+                            </ul>
+                        </li>
+                    </ul>
+                    <Button href={props.github_link} target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
+                    </Card.Text>
+                </Card.ImgOverlay>
+        </Card>
+    );
+}
 
 
 export function MyProjects () {
     return (
         <Stack gap={2}>
-            <Card className="bg-dark text-white">
-                <Card.Img src="./code.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
-                <Card.ImgOverlay>
-                    <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
-                    <h1>This Website!</h1>
-                    <ul>
-                        <li><b style={{fontSize: "larger"}}>When: </b>Spring 2023</li>
-                        <li><b style={{fontSize: "larger"}}>Languages Used: </b>HTML, CSS, JavaScript (React)</li>
-                        <li><b style={{fontSize: "larger"}}>Summary: </b>
-                            <ul>
-                                <li>Fully functioning website with different pages</li>
-                                <li>Made using React and Three.js</li>
-                            </ul>
-                        </li>
-                        <li><b style={{fontSize: "larger"}}>Features:</b>
-                            <ul>
-                                <li>Original solar system model (not accurate) made with Three.js</li>
-                                <li>List of all my relevant projects (here!)</li>
-                                <li>Electronic copy of my resumé</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <Button href='https://github.com/joshbernsteint/joshbernsteint.github.io' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
-                    </Card.Text>
-                </Card.ImgOverlay>
-                </Card>
+            <Project
+                title="ANGEL: Node-based Downloader and Converter Application"
+                image="./angel.png"
+                when="Summer 2023"
+                languages="React.js, Express.js, Electron.js, C++, ffmpeg"
+                summary={["Electron-based Node and React Application to download and convert audio and video files","Installed as a Desktop Application"]}
+                features={["Full-fledged installer executable to facilitate a pain-free install process","Customizable accessiblity, download, and converter settings", "Advanced download options, inclduding being able to choose video/audio quality, and desired frame rate of download"]}
+                github_link = "https://github.com/joshbernsteint/ANGEL"
+            />
 
-                <Card className="bg-dark text-white">
-                <Card.Img src="./team11.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
-                <Card.ImgOverlay>
-                    <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
-                    <h1>Scrumptious Solar Services</h1>
-                    <ul>
-                        <li><b style={{fontSize: "larger"}}>When: </b>Spring 2023</li>
-                        <li><b style={{fontSize: "larger"}}>Languages/Technologies Used: </b>Javascript(React), Firebase, Stripe, Express</li>
-                        <li><b style={{fontSize: "larger"}}>Summary: </b>
-                            <ul>
-                                <li>Made in collaboration with Joshua Gorman, Antonio Cardona, Sohan Chatterjee, Jasmine Perez, and Campbell Tedtsen</li>
-                                <li>Online portal that allows for the management of solar panel-related projects</li>
-                            </ul>
-                        </li>
-                        <li><b style={{fontSize: "larger"}}>Features:</b>
-                            <ul>
-                                <li>Multiple different account types</li>
-                                <ul><li>Manager, Sales Representative, Construction Worker, End Customer</li></ul>
-                                <li>Creation and deletion of tasks by managers</li>
-                                <li>Responsive database to reliably and securely hold account and task data</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <Button href='https://github.com/joshbernsteint/team11-scrumptious_7' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
-                    </Card.Text>
-                </Card.ImgOverlay>
-                </Card>
-            <Card className="bg-dark text-white">
-                <Card.Img src="./Ethel5.png" alt="Card image" height={"600px"} style={{opacity: "15%"}}/>
-                <Card.ImgOverlay>
-                    <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
-                    <h1>ETHEL: Simulating a custom CPU and Assembly Language</h1>
-                    <ul>
-                        <li><b style={{fontSize: "larger"}}>When: </b>Fall 2022</li>
-                        <li><b style={{fontSize: "larger"}}>Tools Used: </b>Logisim Evolution and Python</li>
-                        <li><b style={{fontSize: "larger"}}>Summary: </b>
-                            <ul>
-                                <li>Utilized Logisim evolution simulation software to create a completely functional virtual CPU. </li>
-                                <li>Developed an assembly language (and assembler) that can be directly run on the simulation via Python. </li>
-                                <li>Synthesized documentation to allow for greater ease in learning assembly language. </li>
-                                <li>Named after one of the dogs I raised (that one →)</li>
-                            </ul>
-                        </li>
-                        <li><b style={{fontSize: "larger"}}>Features:</b>
-                            <ul>
-                                <li>8 general-purpose 64 bit registers</li>
-                                <li>Can handle operations using register identifiers or immediate numbers</li>
-                                <li>Able to perform basic math calculations like add and subtract</li>
-                                <li>Fully-integrated branching (Unconditional, Conditional, Branch-and-link)</li>
-                                <li>Capability to load variable values from memory</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <Button href='https://github.com/joshbernsteint/My-Projects/tree/main/ETHEL%20Assembler' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
-                    </Card.Text>
-                </Card.ImgOverlay>
-                </Card>
+            <Project
+                title="This Website!"
+                image="./code.png"
+                when="Spring 2023"
+                languages="HTML, CSS, React.js, and Three.js"
+                summary={["Fully functioning website with different pages","Made using React for frontend and Three.js for 3D models"]}
+                features={["Extended version of my resumé with more information","Original solar system model (not accurate) made with Three.js", "List of all my relevant projects","Electronic copy of my paper resumé"]}
+                github_link = "https://github.com/joshbernsteint/joshbernsteint.github.io"
+            />
 
-                <Card className="bg-dark text-white">
-                <Card.Img src="./risk.png" alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
-                <Card.ImgOverlay>
-                    <Card.Text style={{opacity: "100%", fontSize: "larger"}}>
-                    <h1>Creating a Plant Pathogen Forecasting System</h1>
-                    <ul>
-                        <li><b style={{fontSize: "larger"}}>When: </b>Fall 2022</li>
-                        <li><b style={{fontSize: "larger"}}>Language Used: </b>Python (Matplot)</li>
-                        <li><b style={{fontSize: "larger"}}>Summary: </b>
-                            <ul>
-                                <li>Constructed a basic plant disease forecasting model for common corn rust.</li>
-                                <li>Used localized weather data from Moonochie, NJ.</li>
-                                <li>Determined risk percentage of diease outbreak over time.</li>
-                            </ul>
-                        </li>
-                        <li><b style={{fontSize: "larger"}}>Features:</b>
-                            <ul>
-                                <li>Model can be applied to any location, all it needs is weather data.</li>
-                                <li>Currently only focused on one Pathogen, but can easily be expanded to work on multiple simultaneously.</li>
-                                <li>Accompanying research paper outlines the history of these forecasting models as well as their necessity.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <Button href='https://github.com/joshbernsteint/My-Projects/tree/main/Plant%20Disease%20Forcasting%20System' target={"_blank"} variant='secondary' style={{width: "auto",height: "auto", padding: "10px"}}>Check out the source code on <img src="./gitHub.png" style={{width: "50px", top: "0"}}/> </Button>
-                    </Card.Text>
-                </Card.ImgOverlay>
-                </Card>
+            <Project
+                title="Scrumptious Solar Services"
+                when="Spring 2023"
+                languages="React.js, Node.js, Firebase, and Stripe"
+                image="./team11.png"
+                summary={["Online portal that allows for the management of solar panel-related projects","Made in collaboration with Joshua Gorman, Antonio Cardona, Sohan Chatterjee, Jasmine Perez, and Campbell Tedtsen"]}
+                features={["Multiple different account types, such as Manager, Sales Rep, Construction worker, and end-customer","Creation and deletion of tasks by managers","Responsive database to reliably and securely hold account and task data",
+                "Email and private chat service to facilitate efficient communication amongst employees and customers"]}
+                github_link="https://github.com/joshbernsteint/team11-scrumptious_7"
+            />
+
+
+            <Project
+                title="ETHEL: Simulating a custom CPU and Assembly Language"
+                when="Fall 2022"
+                image="./Ethel5.png"
+                languages="Python, Logisim Evolution"
+                summary={["Utilized Logisim evolution simulation software to create a completely functional virtual CPU","Developed an assembly language (and assembler) that can be directly run on the simulation via Python",
+                        "Synthesized documentation to allow for greater ease in learning assembly language"]}
+                features={["8 general-purpose 64 bit registers", "Can handle operations using register identifiers or immediate numbers", 
+                            "Able to perform basic math calculations like add and subtract as well as fully-integrated branching (Unconditional, Conditional, Branch-and-link)", "Capability to load/store variable values from/to memory"]}
+                github_link='https://github.com/joshbernsteint/My-Projects/tree/main/ETHEL%20Assembler'
+            />
+
+            <Project 
+                title="Plant Pathogen Forecasting System"
+                image="./risk.png"
+                when="Fall 2022"
+                languages="Python (Matplot)"
+                summary={["Constructed a basic plant disease forecasting model to predict the spread of common corn rust", "Determined a risk percentage of disease outbreak over time based on weather data"]}
+                features={["Model can be applied to any location with available weather data", "Currently only focused on one pathogen (common corn rust), but can easily be expanded to work on multiple simultaneously, or a different pathogen if its ideal conditions are known",
+                            "Accompanying research paper outlines the history of forecasing models as well as their necessity"]}
+                github_link='https://github.com/joshbernsteint/My-Projects/tree/main/Plant%20Disease%20Forcasting%20System'
+            
+            />
         </Stack>
     )
 }
