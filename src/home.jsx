@@ -2,6 +2,49 @@ import { Button, Col,Stack, Card } from "react-bootstrap";
 import styles from './App.module.css';
 import { MyRing } from './MyRing'
 
+/**
+ * Creates a Work Prop
+ * @param {str} title Name of position
+ * @param {str} when When position was held
+ * @param {str} company Company where position was held
+ * @param {str} where Physical Location of company
+ * @param {Array[str]} des Description
+ * @returns A Work Component
+ */
+function Work(props){
+    return (
+        <>
+            <h5><b>{props.title}</b></h5>
+            <ul>
+                <li><b>When: </b>{props.when}</li>
+                <li><b>Company: </b>{props.company}</li>
+                <li><b>Where: </b>{props.where}</li>
+                <li><b>Description: </b></li>
+                <ul>
+                    {props.des.map((el,i) => (
+                        <li key={i}>{el}</li>
+                    ))}
+                </ul>
+            </ul>
+        </>
+    );
+}
+
+/**
+ * Makes an Award Component
+ * @param {str} name Name of Award 
+ * @param {str} when Date of Award receival 
+ * @returns Award Component
+ */
+function Award(props){
+    return (
+        <>
+            <b style={{fontSize: "15pt"}}>{props.name}</b><br/>
+            <em>{props.when}</em><br/>
+        </>
+    );
+}
+
 export function Home(){
     return (
         <Stack gap={10}
@@ -108,76 +151,36 @@ export function Home(){
 
                     <hr/>
                     <h3>Work Experience</h3>
-                    {/* Research Assistant HTML */}
-                    <>
-                        <h5><b>Research Assistant</b></h5>
-                        <ul>
-                            <li><b>When: </b>Summer 2022</li>
-                            <li><b>Where: </b>Hoboken, NJ</li>
-                            <li><b>Company: </b>Stevens Institute of Technology</li>
-                            <li><b>Responsibilites: </b></li>
-                            <ul>
-                                <li>Developed scripts in Python to handle large amounts of image data. 
-                                    Scripts automated tasks such as downloading, converting, analyzing, and storing image data.
-                                </li>
-                                <li>Performed weekly presentations with my weekly progress.</li>
-                                <li>Collaborated with other research assistants to maximize efficiency of code.</li>
-                            </ul>
-                    
-                        </ul>
-                    </>
-                    {/* Puppy Raiser HTML */}
-                    <>
-                        <h5><b>Certified Puppy Raiser</b></h5>
-                        <ul>
-                            <li><b>When: </b>August 2019 - Present</li>
-                            <li><b>Where: </b>Mahwah, NJ</li>
-                            <li><b>Company: </b>The Seeing Eye</li>
-                            <li><b>Responsibilites: </b></li>
-                            <ul>
-                                <li>Tasked with training a 8-week-old puppy for 12-14 months. Training includes basic commands such as sit, down, and rest(stay).
-                                </li>
-                                <li>Engage in activities with other puppy raisers, intended to expose the puppy to a variety of different environments. </li>
-                            </ul>
-                        </ul> 
-                    </>
-                    {/* Pool Attendant HTML */}
-                    <>
-                    <h5><b>Pool Attendant</b></h5>
-                        <ul>
-                            <li><b>When: </b>Summer 2020, 2021</li>
-                            <li><b>Where: </b>Upper Saddle River, NJ / Mahwah, NJ</li>
-                            <li><b>Company: </b>Adamas Building Services</li>
-                            <li><b>Responsibilites: </b></li>
-                            <ul>
-                                <li>Ensure guests follow assigned COVID policy to minimize spread.</li>
-                                <li>Performed various custodial duties when required.</li>
-                            </ul>
-                        </ul> 
-                    </>
+                    <Work
+                        title="Research Assistant"
+                        when="Summer 2022"
+                        company="Stevens Institute of Technology"
+                        where="Hoboken, NJ"
+                        des={["Developed scripts in Python to handle large amounts of image data.","Scripts automated tasks such as downloading, converting, analyzing, and storing image data.",
+                        "Performed weekly presentations on my progress.", "Collaborated with other research assistants to maximize efficiency of code."]}
+                    />
+                    <Work
+                        title="Certified Puppy Raiser (Volunteer)"
+                        when="August 2019 - Present"
+                        company="The Seeing Eye"
+                        where="Mahwah, NJ"
+                        des={["Worked with The Seeing Eye to help provide the visually impaired with guide dogs.","Tasked with training a 8-week-old puppy for 12-14 months. Training includes basic commands such as sit, down, and rest(stay).",
+                        "Engage in activities with other puppy raisers, intended to expose the puppy to a variety of different environments."]}
+                    />
+                    <Work
+                        title="Pool Attendant"
+                        when="Summer 2020, 2021"
+                        company="Adamas Building Services"
+                        where="Upper Saddle River, NJ / Mahwah, NJ"
+                        des={["Ensured guests follow assigned COVID policy to minimize spread.","Performed various custodial duties when required.","Periodically checked pool temperature and pH to maintain optimal swimming environment."]}
+                    />
 
-
-
-                {/* Awards */}
                 <hr/>
                 <h3>Awards & Accolades</h3>
-                <b style={{fontSize: "15pt"}}>Stevens Pinnacle Scholar</b><br/>
-                <em>September 2021 - Present</em> <br/>
-
-                <b style={{fontSize: "15pt"}}>Stevens Dean's List</b><br/>
-                <em>Fall 2021 - Fall 2022</em> <br/>
-
-                <b style={{fontSize: "15pt"}}>3<sup>rd</sup> Place Overall: ReHack 2021</b><br/>
-                <em>November 2021</em><br/>
-                
-                <b style={{fontSize: "15pt"}}>Platinum Thunderbird Scholar</b><br/>
-                <em>June 2021</em><br/>
-
-                <b style={{fontSize: "15pt"}}>Academic Decathalon: Gold medal in Economics</b><br/>
-                <em>Winter 2021</em><br/>
-
-                <b style={{fontSize: "15pt"}}>Academic Decathalon: Gold medal in Social Science</b><br/>
-                <em>Winter 2021</em><br/>
+                    <Award name="Stevens Dean's List" when="September 2021 - Present"/>
+                    <Award name="Stevens Pinnacle Scholar" when="September 2021 - Present"/>
+                    <Award name="Finalist: ReHack 2021" when="November 2021"/>
+                    <Award name="Mahwah High School: Platinum Thunderbird Scholar" when="June 2021"/>
                 </Card.Text>
             </Card.Body>
             </Card>
