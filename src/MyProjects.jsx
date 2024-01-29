@@ -12,7 +12,7 @@ import styles from './App.module.css';
  * @param {str} github_link A url containing the link to the github repo
  * @returns A Project component
  */
-function Project(props){
+function Project({...props}){
     return (
         <Card className="bg-dark text-white">
             <Card.Img src={props.image} alt="Card image" height={"500px"} style={{opacity: "15%"}}/>
@@ -53,6 +53,18 @@ export function MyProjects () {
     return (
         <Stack gap={2}>
             <Project
+                title="AlgoRacer: Interactive Game for Learning CS Algorithms"
+                image="./algoracer.png"
+                when="Fall 2023"
+                languages="React.js, Express.js, MongoDB"
+                summary={["Web Application to teach fundamental computer science algorithms.", "Users must outcompete an accelerating computer in walking through the steps of various algorithms.", "The goal is to see how far (or fast) you can get before the computer overtakes you."]}
+                features={["Learning page with in-depth guides on how to perform each step for every supported algorithm.", "Practice gamemode without a robot to dry-run the basic mechanics of the game.", "Two different gamemodes with selectable difficulty: Endless and Race.",
+            "Leaderboard to compare your score with other users."]}
+                github_link = "https://github.com/joshbernsteint/AlgoRacer"
+            
+            />
+
+            <Project
                 title="ANGEL: Node-based Downloader and Converter Application"
                 image="./angel.png"
                 when="Summer 2023"
@@ -66,7 +78,7 @@ export function MyProjects () {
                 title="This Website!"
                 image="./code.png"
                 when="Spring 2023"
-                languages="HTML, CSS, React.js, and Three.js"
+                languages="HTML, CSS, React.js, Three.js"
                 summary={["Fully functioning website with different pages","Made using React for frontend and Three.js for 3D models"]}
                 features={["Extended version of my resumé with more information","Original solar system model (not accurate) made with Three.js", "List of all my relevant projects","Electronic copy of my paper resumé"]}
                 github_link = "https://github.com/joshbernsteint/joshbernsteint.github.io"

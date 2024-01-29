@@ -72,8 +72,8 @@ export function Home(){
                 <Card.Text>
                     <h3>Hello!</h3> 
                     I'm Josh, currently a 20-year-old 3rd year Computer Science major at 
-                    Stevens Institute of Technology in Hoboken, NJ. <br/> <br/>
-                    
+                    Stevens Institute of Technology in Hoboken, NJ.  I will be graduating with my bachelor's degree in May, but I will be going back to school as a graduate student the following September.<br/> <br/>
+                
                     I describe myself as a nerd, being a huge fan of franchises like <i>Lord of the Rings</i> and <i>Star Wars</i>. I am a big fan of video games, my current favorite being <i>Destiny 2</i> and <i>Rainbow Six: Siege</i>.  
                     I also love animals (especially my dog and cat!), and I
                     volunteering in my spare time with <a href='https://www.seeingeye.org/' target={"_blank"} className={`${styles.textLink}`} rel="noreferrer noopener">The Seeing Eye</a> in Morristown, 
@@ -94,18 +94,18 @@ export function Home(){
                             <b>Highly Skilled: </b>
                             <ul>
                                 <li>C/C++</li>
+                                <li>Javascript</li>
                                 <li>Python</li>
                                 <li>Java</li>
-                                <li>ARM Assembly</li>
+                                <li>Linux shell</li>
                             </ul>
                         </Col>
                         
                         <Col>
                             <b>Proficient: </b>
                             <ul>
-                                <li>Javascript, CSS</li>
+                                <li>ARM Assembly</li>
                                 <li>OCaml</li>
-                                <li>Linux shell</li>
                                 <li>Racket</li>
                             </ul>
 
@@ -119,8 +119,8 @@ export function Home(){
 
                     <h5><b>GIS Software</b></h5>
                     <ul>
-                        <li>Versed in manipulating and illistruating data with GIS softwares, including ArcMap and ArcGIS pro</li>
-                        <li>Skilled in designing python scripts to automate the creation of GIS maps and features</li>
+                        <li>Versed in manipulating and illistruating data with GIS softwares, including ArcMap and ArcGIS pro.</li>
+                        <li>Skilled in designing python scripts to automate the creation of GIS maps and features.</li>
                     </ul>                   
 
                     {/* Education Experience */}
@@ -137,6 +137,7 @@ export function Home(){
                                 <li>Algorithms - A</li>
                                 <li>Computer Organization & Systems - A</li>
                                 <li>Systems Programming - A</li>
+                                <li>Web Development - A</li>
                             </ul>
                         </li>
                     </ul>
@@ -151,6 +152,20 @@ export function Home(){
 
                     <hr/>
                     <h3>Work Experience</h3>
+                    <Work
+                        title="Student Assistant"
+                        when="Fall 2023 - Present"
+                        company="Stevens Institute of Technology"
+                        where="Hoboken, NJ"
+                        des={["Developed an interactive service dashboard in NodeJS and React.", "Connected to a dual-database system in MongoDB and GraphDB.", "Communicated with team members to incorporate additional contributions into the dashboard."]}
+                    />
+                    <Work
+                        title="Course Assistant"
+                        when="Fall 2023 - Present"
+                        company="Stevens Institute of Technology"
+                        where="Hoboken, NJ"
+                        des={["Tasked with grading assigned homeworks and exams.", "Conducted weekly office hours to aid students with the course material.", "Ran lab sessions to showcase examples and explain course material in greater detail."]}
+                    />
                     <Work
                         title="Research Assistant"
                         when="Summer 2022"
