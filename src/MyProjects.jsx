@@ -52,6 +52,43 @@ function Project({...props}){
 export function MyProjects () {
     return (
         <Stack gap={2}>
+            <Project 
+                title="CoverAI: AI-Assisted Cover Letter Generation"
+                image="./coverai.png"
+                when="Fall 2023 - Spring 2024"
+                languages="OpenAI, Clerk, React.js, Express.js, MongoDB, TailwindCSS"
+                summary={[
+                    "Generate personalized cover letters based on your personal skills/experience and job posting.",
+                    "Also incorporates a custom-built chrome browser extension to streamline getting job data."
+                ]}
+                features={[
+                    "Upload a resume or fill out a manual form to allow for better letter creation.",
+                    "A user can have multiple resumes stored on their accounts to create cover letters tailored for different uses (Business vs. Technical).",
+                    "Cover letters are automatically saved to a MonogoDB database and can be manually updated (via a text editor) and re-downloaded at any time.",
+                    "Browser extension automatically acquires job data through a web scraper, this creates more customized letters for the specific job.",
+                    "Previous cover letters are fed into the AI to make it more accurate over time."
+                ]}
+                github_link = "https://github.com/joshbernsteint/CoverAI"
+            />
+
+            <Project 
+                title="Rhythm Game: Educational Typing Game"
+                image="./rhythm.png"
+                when="Spring 2024"
+                languages="ffmpeg, Docker, Clerk, React.js, Express.js, MongoDB, TailwindCSS"
+                summary={[
+                    "Rhythm game to teach better typing skills by typing keys to the beat of a song.",
+                    "Play individually or as a group, and compare with your friends with a leaderboard."
+                ]}
+                features={[
+                    "Two gamemodes: singleplayer or multiplayer, where users can join or create lobbies of their favorite levels.",
+                    "Level creator to build your own levels from a song file that is uploaded by the user.",
+                    "Friend system, where you can add users to your friends list to see their levels more prominently.",
+                    "Clerk integration to allow for easier account management.",
+                ]}
+                github_link = "https://github.com/ulrokx/cs554-rhythm"
+            />
+
             <Project
                 title="AlgoRacer: Interactive Game for Learning CS Algorithms"
                 image="./algoracer.png"
@@ -89,7 +126,7 @@ export function MyProjects () {
                 when="Spring 2023"
                 languages="React.js, Node.js, Firebase, and Stripe"
                 image="./team11.png"
-                summary={["Online portal that allows for the management of solar panel-related projects","Made in collaboration with Joshua Gorman, Antonio Cardona, Sohan Chatterjee, Jasmine Perez, and Campbell Tedtsen"]}
+                summary={["Online portal that allows for the management of solar panel-related projects"]}
                 features={["Multiple different account types, such as Manager, Sales Rep, Construction worker, and end-customer","Creation and deletion of tasks by managers","Responsive database to reliably and securely hold account and task data",
                 "Email and private chat service to facilitate efficient communication amongst employees and customers"]}
                 github_link="https://github.com/joshbernsteint/team11-scrumptious_7"
