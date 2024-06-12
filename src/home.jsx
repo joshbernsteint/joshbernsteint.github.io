@@ -71,8 +71,8 @@ export function Home(){
             <Card.Body>
                 <Card.Text>
                     <h3>Hello!</h3> 
-                    I'm Josh, currently a 21-year-old 3rd year Computer Science major at 
-                    Stevens Institute of Technology in Hoboken, NJ.  I will be graduating with my masters degree in May with a Masters in Computer Science.<br/> <br/>
+                    I'm Josh, currently a 21-year-old 4th year Computer Science major at 
+                    Stevens Institute of Technology in Hoboken, NJ.  I will be graduating with my Master's degree in May with a Master's in Computer Science.<br/> <br/>
                 
                     I describe myself as a nerd, being a huge fan of franchises like <i>Lord of the Rings</i> and <i>Star Wars</i>. I am a big fan of video games, my current favorite being <i>Destiny 2</i> and <i>Rainbow Six: Siege</i>.  
                     I also love animals (especially my dog and cat!), and I
