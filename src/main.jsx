@@ -9,6 +9,7 @@ import {
 import { MyProjects } from './MyProjects';
 import { Stack } from 'react-bootstrap';
 import styles from './App.module.css';
+import Map from './Map';
 
 
 
@@ -20,6 +21,10 @@ const router = createHashRouter([
   {
     path: "/projects",
     element: <MyProjects/>,
+  },
+  {
+    path: "/map",
+    element: <Map />
   },
   {
     path: "/resume",
