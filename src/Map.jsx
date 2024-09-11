@@ -10,7 +10,7 @@ import styles from './Map.module.css';
 
 export default function Map() {
   const Controls = () => {
-    const { zoomIn, zoomOut, resetTransform } = useControls();
+    const { zoomIn, zoomOut, resetTransform, ...other } = useControls();
     return (
       <div className={styles.controls}>
         <button onClick={() => zoomIn(1)}>Zoom In</button>

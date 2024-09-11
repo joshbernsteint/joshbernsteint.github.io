@@ -3,13 +3,14 @@ import styles from './App.module.css';
 
 /**
  * Creates a Project Card
- * @param {str} image Path to the image file for the background
- * @param {str} title Name of the project
- * @param {str} when Date specifiying when the project was completed 
- * @param {str} languages String specifying what programming languages and technologies were used
- * @param {Array[str]} summary A list of strings containing a summary of the project
- * @param {str} features A list of strings containing the features of the project
- * @param {str} github_link A url containing the link to the github repo
+ * @param {Object} props
+ * @param {str} props.image Path to the image file for the background
+ * @param {str} props.title Name of the project
+ * @param {str} props.when Date specifiying when the project was completed 
+ * @param {str} props.languages String specifying what programming languages and technologies were used
+ * @param {Array.<String>} props.summary A list of strings containing a summary of the project
+ * @param {str} props.features A list of strings containing the features of the project
+ * @param {str} props.github_link A url containing the link to the github repo
  * @returns A Project component
  */
 function Project({...props}){
@@ -49,6 +50,7 @@ function Project({...props}){
 }
 
 
+
 export function MyProjects () {
     return (
         <Stack gap={2}>
@@ -69,6 +71,24 @@ export function MyProjects () {
                     "Previous cover letters are fed into the AI to make it more accurate over time."
                 ]}
                 github_link = "https://github.com/joshbernsteint/CoverAI"
+            />
+
+            <Project 
+                title="Extended-Syntax Relational Algebra Compiler"
+                image={"./algebropiler.png"}
+                when={"Spring 2024"}
+                languages={"C, Javascript"}
+                summary={[
+                    "Compiler for converting relational algebraic expressions to executable files that when run, are the result of the algebra.",
+                    "Specifically, it is primarily meant to convert the extended algebraic operator Phi. This operator is able to combine typical SQL 'Group By' queries into one.",
+                    "Using C's inherit speed and efficiency, this leads to queries being compiled and completed very quickly.",
+                ]}
+                features={[
+                    "Project itself built with entirely vanilla POSIX-compliant C code, no external libraries.",
+                    "Visual Studio Code Extension that adds syntax highlighting and basis macros for ease of creating valid algebraic expressions. This is the only place where Javascript is used in the project.",
+                    "Two input types: file (where the above extension can be used), or manual, which is done over the command line.",
+                ]}
+                github_link={"https://github.com/joshbernsteint/Algebropiler"}
             />
 
             <Project 
@@ -94,7 +114,7 @@ export function MyProjects () {
                 image="./algoracer.png"
                 when="Fall 2023"
                 languages="React.js, Express.js, MongoDB"
-                summary={["Web Application to teach fundamental computer science algorithms.", "Users must outcompete an accelerating computer in walking through the steps of various algorithms.", "The goal is to see how far (or fast) you can get before the computer overtakes you."]}
+                summary={["Web Application to teach fundamental computer science algorithms.", "Users must out-compete an accelerating computer in walking through the steps of various algorithms.", "The goal is to see how far (or fast) you can get before the computer overtakes you."]}
                 features={["Learning page with in-depth guides on how to perform each step for every supported algorithm.", "Practice gamemode without a robot to dry-run the basic mechanics of the game.", "Two different gamemodes with selectable difficulty: Endless and Race.",
             "Leaderboard to compare your score with other users."]}
                 github_link = "https://github.com/joshbernsteint/AlgoRacer"
@@ -107,7 +127,7 @@ export function MyProjects () {
                 when="Summer 2023"
                 languages="React.js, Express.js, Electron.js, C++, ffmpeg"
                 summary={["Electron-based Node and React Application to download and convert audio and video files","Installed as a Desktop Application"]}
-                features={["Full-fledged installer executable to facilitate a pain-free install process","Customizable accessiblity, download, and converter settings", "Advanced download options, inclduding being able to choose video/audio quality, and desired frame rate of download"]}
+                features={["Full-fledged installer executable to facilitate a pain-free install process","Customizable accessibility, download, and converter settings", "Advanced download options, inclduding being able to choose video/audio quality, and desired frame rate of download"]}
                 github_link = "https://github.com/joshbernsteint/ANGEL"
             />
 
@@ -117,7 +137,7 @@ export function MyProjects () {
                 when="Spring 2023"
                 languages="HTML, CSS, React.js, Three.js"
                 summary={["Fully functioning website with different pages","Made using React for frontend and Three.js for 3D models"]}
-                features={["Extended version of my resumé with more information","Original solar system model (not accurate) made with Three.js", "List of all my relevant projects","Electronic copy of my paper resumé"]}
+                features={["Extended version of my resume with more information","Original solar system model (not accurate) made with Three.js", "List of all my relevant projects","Electronic copy of my paper resumé"]}
                 github_link = "https://github.com/joshbernsteint/joshbernsteint.github.io"
             />
 
@@ -152,7 +172,7 @@ export function MyProjects () {
                 languages="Python (Matplot)"
                 summary={["Constructed a basic plant disease forecasting model to predict the spread of common corn rust", "Determined a risk percentage of disease outbreak over time based on weather data"]}
                 features={["Model can be applied to any location with available weather data", "Currently only focused on one pathogen (common corn rust), but can easily be expanded to work on multiple simultaneously, or a different pathogen if its ideal conditions are known",
-                            "Accompanying research paper outlines the history of forecasing models as well as their necessity"]}
+                            "Accompanying research paper outlines the history of forecasting models as well as their necessity"]}
                 github_link='https://github.com/joshbernsteint/My-Projects/tree/main/Plant%20Disease%20Forcasting%20System'
             
             />
